@@ -3,9 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <title>Äänestyssovellus</title>
 </head>
 <body>
+    <div class="text" style="width: 500px; margin: auto; text-align: center">
+        <div id="kvalinta">
+            <input id="salasana" type="password" placeholder="Salasana">
+            <input id="yp" type="button" value="Kirjaudu ylläpitäjänä">
+        </div>
     
+        <div id="yllapitajasivu" style="display: none; margin-bottom: 20px">
+            <input id="kirjauduUlos" type="button" value="Kirjaudu ulos">
+            <br>
+            <p>Yllapitäjä</p>
+            <input id="voteText" type="text" value="" placeholder="Äänestys">
+            <input id="addVoteBtn" type="button" value="Luo äänestys">
+            <input id="removeVoteBtn" type="button" value="Poista äänestys">
+            <br>
+            <input id="vaihtoEhto1" type="text" value="Vaihtoehto 1" placeholder="Vaihtoehto 1">
+            <input id="vaihtoEhto2" type="text" value="Vaihtoehto 2" placeholder="Vaihtoehto 2">
+        </div>
+    
+    
+        <div id="aanestyslista">
+        </div>
+    </div>
+    <script src="main.js"></script>
 </body>
-</html>
+</html> 
